@@ -80,8 +80,16 @@ p { margin: 0 0 .7em 0; }
 
 article a.btn {
 	.button_normal(#fff, #8cc428, #8cc428);
+
+	&:hover {
+		.button_hover(#000, #fff);
+	}
 }
 
 aside a.btn {
 	.button_normal(#72b003, #fff, #fff);
+
+	&:hover {
+		.button_hover(#fff, rgba(255,255,255,.3));
+	}
 }
