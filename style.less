@@ -62,20 +62,21 @@ h3 {
 
 p { margin: 0 0 .7em 0; }
 
-.button_normal() {
+.button_normal(@text, @background, @border) {
+	color: @text;
 	display: inline-block;
 	padding: 4px 16px 2px 16px;
 	border-radius: 8px;
 	font-size: .9em;
-	border: 1px solid #fff;
+	border: 1px solid @border;
 	text-decoration: none;
-	background-color: #fff;
+	background-color: @background;
 }
 
 article a.btn {
-	.button_normal();
+	.button_normal(#fff, #8cc428, #8cc428);
 }
 
 aside a.btn {
-	.button_normal();
+	.button_normal(#72b003, #fff, #fff);
 }
