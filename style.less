@@ -71,6 +71,13 @@ p { margin: 0 0 .7em 0; }
 	border: 1px solid @border;
 	text-decoration: none;
 	background-color: @background;
+
+	&::after {
+		content: '\25BA';
+		font-size: 0.8em;
+		padding-left: 6px;
+		opacity: .65;
+	}
 }
 
 .button_hover(@text, @background) {
